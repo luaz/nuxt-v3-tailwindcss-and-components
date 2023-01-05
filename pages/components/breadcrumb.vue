@@ -2,6 +2,20 @@
 useHead({
   title: 'Breadcrumb'
 })
+
+const items = [
+  {
+    text: 'Home',
+    active: true
+  },
+  {
+    text: 'Library',
+    to: '#'
+  },
+  {
+    text: 'Data'
+  }
+]
 </script>
 
 
@@ -33,6 +47,11 @@ useHead({
           <li class="t-breadcrumb-item">Data</li>
         </ol>
       </nav>
+    </div>
+
+    <h2>By Vue Component</h2>
+    <div class="my-3">
+      <t-breadcrumb :items="items"></t-breadcrumb>
     </div>
   </div>
 </template>
