@@ -2,7 +2,8 @@
 const components = {
   '/components/chip': 'Chip',
   '/components/button': 'Button',
-  '/components/breadcrumb': 'Breadcrumb'
+  '/components/breadcrumb': 'Breadcrumb',
+  '/components/pagination': 'Pagination'
 }
 </script>
 
