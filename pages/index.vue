@@ -1,16 +1,19 @@
 <script setup>
-
+const components = {
+  '/components/chip': 'Chip',
+  '/components/button': 'Button',
+  '/components/breadcrumb': 'Breadcrumb'
+}
 </script>
 
 <template>
   <div>
-    <h1 class="text-4xl">Hello World</h1>
+    <h1 class="text-4xl">Test</h1>
     <div class="text-red-500">text-red-500</div>
 
-    <h2 class="text-3xl">Components</h2>
+    <h2 class="mt-3">Components</h2>
     <ul>
-      <li><NuxtLink to="/components/chip">Chip</NuxtLink></li>
-      <li><NuxtLink to="/components/button">Button</NuxtLink></li>    
+      <li v-for="(text, link) in components"><NuxtLink :to="link">{{ text }}</NuxtLink></li>  
     </ul>
   </div>
 </template>
