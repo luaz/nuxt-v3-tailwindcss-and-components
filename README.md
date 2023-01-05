@@ -1,4 +1,4 @@
-# Nuxt 3 + Tailwind CSS 
+# Nuxt 3 + Tailwind CSS (Components)
 
 Example of Tailwind CSS components
 
