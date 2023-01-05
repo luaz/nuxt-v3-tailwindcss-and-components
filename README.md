@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 + Tailwind CSS 
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Example of Tailwind CSS components
 
-## Setup
+## Nuxt / Demo
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
+Development
 
 ```bash
 npm run dev
 ```
 
-## Production
+**NOTE:** Modify `package.json` to change hostname to `localhost`
 
-Build the application for production:
 
-```bash
-npm run build
-```
+## Components
 
-Locally preview production build:
+- Chip
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
