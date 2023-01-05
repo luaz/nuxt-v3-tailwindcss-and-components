@@ -13,18 +13,22 @@
     @apply text-2xl;
   }
   a {
-     @apply underline text-blue-600 hover:text-blue-800
+    @apply t-link;
   }
   a.no-link {
-     @apply text-inherit no-underline hover:underline;
+    @apply text-inherit no-underline hover:underline;
   }
   a.button-link {
-     @apply text-inherit no-underline hover:no-underline;
+    @apply text-inherit no-underline hover:no-underline;
   }
 }
 
 @layer components {
+  .t-link {
+    @apply underline text-blue-600 hover:text-blue-800
+  }
+
   .t-inline-container {
-      @apply inline-flex flex-wrap gap-x-2 gap-y-1
+    @apply inline-flex flex-wrap gap-x-2 gap-y-1
   }
 }

@@ -1,0 +1,21 @@
+@layer components {
+    .t-breadcrumb-sep {
+        @apply text-gray-500;
+    }
+
+    .t-breadcrumb-item {
+        @apply text-gray-500;
+    }
+
+    .t-breadcrumb-item a {
+        @apply text-gray-500 no-underline;
+    }
+
+    .t-breadcrumb-item.active {
+        @apply text-inherit;
+    }
+
+    .t-breadcrumb-item.active a {
+        @apply t-link;
+    }
+}

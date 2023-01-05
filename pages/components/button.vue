@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'Button'
+})
+</script>
+
 <template>
   <div>
     <h1>Button</h1>
@@ -54,16 +60,6 @@
       <NuxtLink class="t-button button-link">
         Link (Button Link)
       </NuxtLink>
-    </div>
-
-    <div>
-      <div>Line 1</div>
-      <div class="t-inline-container my-3">
-        <NuxtLink class="t-button my-3">
-          Link
-        </NuxtLink>
-      </div>
-      <div>Line 2</div>
     </div>
   </div>
 </template>
