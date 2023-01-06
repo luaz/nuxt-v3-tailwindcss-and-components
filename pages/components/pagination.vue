@@ -2,6 +2,15 @@
 useHead({
   title: 'Pagination'
 })
+
+const pagination = {
+  page: 10,
+  length: 10,
+  totalVisible: 5,
+  to: (page) => {
+    return `page/${page}`
+  }
+}
 </script>
 
 <template>
@@ -36,28 +45,33 @@ useHead({
 
     <h2>By Component</h2>
     <div class="my-3">
-        <nav aria-label="page navigation">
-          <ul class="t-inline-container">
-            <li>
-              <span class="t-page-nav disabled">«</span>
-            </li>
-            <li aria-current="page">
-              <span class="t-page-item active">1</span>
-            </li>
-            <li>
-              <a href="#" class="t-page-item">2</a>
-            </li>
-            <li>
-              <a href="#" class="t-page-item">3</a>
-            </li>
-            <li>
-              <span class="t-page-item disabled">...</span>
-            </li>
-            <li>
-              <a href="#" class="t-page-nav" aria-label="Next">»</a>
-            </li>
-          </ul>
-        </nav>
+      <nav aria-label="page navigation">
+        <ul class="t-inline-container">
+          <li>
+            <span class="t-page-nav disabled">«</span>
+          </li>
+          <li aria-current="page">
+            <span class="t-page-item active">1</span>
+          </li>
+          <li>
+            <a href="#" class="t-page-item">2</a>
+          </li>
+          <li>
+            <a href="#" class="t-page-item">3</a>
+          </li>
+          <li>
+            <span class="t-page-item disabled">...</span>
+          </li>
+          <li>
+            <a href="#" class="t-page-nav" aria-label="Next">»</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <h2>By Vue Component</h2>
+    <div class="my-3">
+      <t-pagination v-bind="pagination"></t-pagination>
     </div>
   </div>  
 </template>
