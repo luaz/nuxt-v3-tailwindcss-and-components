@@ -1,0 +1,37 @@
+@layer components {
+    .t-page-item {
+        @apply flex w-12 aspect-square rounded-lg items-center justify-center bg-gray-200 hover:bg-blue-200 no-underline;
+    }
+
+    .t-page-item.active {
+        @apply bg-blue-500 text-white;
+    }
+
+    .t-page-item.disabled {
+        @apply bg-gray-100 text-gray-400;
+    }
+
+    .t-page-nav {
+        @apply flex w-12 aspect-square rounded-lg items-center justify-center hover:bg-blue-200 no-underline;
+    }
+
+    .t-page-nav.disabled {
+        @apply text-gray-300 no-underline hover:bg-inherit;
+    }
+
+    .t-breadcrumb-item {
+        @apply text-gray-500;
+    }
+
+    .t-breadcrumb-item a {
+        @apply text-gray-500 no-underline;
+    }
+
+    .t-breadcrumb-item.active {
+        @apply text-inherit;
+    }
+
+    .t-breadcrumb-item.active a {
+        @apply t-link;
+    }
+}

@@ -16,4 +16,7 @@ npm run dev
 ## Components
 
 - Chip
+- Button
+- Breadcrumb
+- Pagination
 
